@@ -18,7 +18,7 @@
 
   <h2> <p style="font-family: Arial">Introducción: </h2>
 
-    <p style="font-family: Arial">Durante cada temporada de la NBA, un panel de expertos realiza votaciones para seleccionar al jugador más valioso de la temporada (MVP pos sus siglas en inglés). En la mayoría de los casos hay un candidato que se diferencia claramente de los otros jugadores, pero para la temporada 2022-2023 se presenta una carrera entre 3 candidatos finalistas que tienen un caso fuerte para ser elegidos cómo MVP: Nikola Jokić (Serbia), Giannis Antetoukoumpo (Grecia) y Joel Embiid (Camerún).
+    <p style="font-family: Arial">Durante cada temporada de la NBA, un panel de expertos realiza votaciones para seleccionar al jugador más valioso de la temporada (MVP por sus siglas en inglés). En la mayoría de los casos hay un candidato que se diferencia claramente de los otros jugadores, pero para la temporada 2022-2023 se presenta una carrera entre 3 finalistas que tienen un caso fuerte para ser elegidos cómo MVP: Nikola Jokić (Serbia), Giannis Antetoukoumpo (Grecia) y Joel Embiid (Camerún).
 <br />
 <br />
 Para esta actividad se comparan las estadisticas de estos 3 jugadores durante la temporada 2022-2023, para definir quién merece el premio a jugador más valioso utilizando datasets generados durante la actividad número 2 de minería de datos (05MBID).
@@ -29,11 +29,11 @@ Para esta actividad se comparan las estadisticas de estos 3 jugadores durante la
 <a href="https://fivethirtyeight.com/features/the-best-way-to-derail-an-nba-offense-make-it-waste-time/" target="_blank">
   artículo de muestra
 </a> 
-del sito web FiveThirtyEight. Por lo tanto, la audiencia a quién está dirigido es a personas interesadas en la NBA y cómo la analítica de datos puede generar nuevas perspectivas sobre la misma.
+del sito web FiveThirtyEight. Por lo tanto, la audiencia a quién está dirigido es a personas interesadas en la NBA, y cómo la analítica de datos puede generar nuevas perspectivas sobre sus jugadores.
 
   <h2> <p style="font-family: Arial">Objetivo: </h2>
 
-    <p style="font-family: Arial">Generar visualizaciones de datos ilustrando el rendimiento de los 3 candidatos al MVP en 5 categorías: Anotación, creación, defensa, espaciado y rendimiento colectivo. Para posteriormente hacer un análisis y elegir al MVP de la NBA durante la temporada 2022-2023.
+    <p style="font-family: Arial">Generar visualizaciones de datos ilustrando el rendimiento de los 3 candidatos al MVP en 5 categorías: <b> Anotación, creación, defensa, espaciado y rendimiento colectivo.</b> Para hacer un análisis y elegir al jugador más valioso de la NBA durante la temporada 2022-2023.
 
   <h3> <p style="font-family: Arial">Anotación: </h3>
 
@@ -46,7 +46,7 @@ del sito web FiveThirtyEight. Por lo tanto, la audiencia a quién está dirigido
 
 <br />
 <br />
-Se puede observar que Embiid y Giannis anotan con un gran volumen en comparación con el resto de la liga, siendo número 1 y 2 respectivamente en puntos por 100 posesiones y usando un gran porcentaje de las posesiones de sus equipos, ilustrado por el tamaño de los puntos que los representa. El perfil anotador de Jokić es muy distinto, ya que su volumen y porcentaje de uso son menores, pero su eficiencia es la mejor entre jugadores con un alto volumen de anotación. Para esta categoría la combinación de eficiencia por encima del promedio, con el primer lugar de toda la liga en volumen le da a Embiid la ventaja.
+Se puede observar que Embiid y Giannis anotan con un gran volumen en comparación con el resto de la liga, siendo número 1 y 2 respectivamente en puntos por 100 posesiones y usando un gran porcentaje de las posesiones de sus equipos, ilustrado por el tamaño de los puntos que los representa. El perfil anotador de Jokić es muy distinto, ya que su volumen y porcentaje de uso son menores, pero su eficiencia es la mejor entre todos los jugadores que anotan más de 30 puntos por 100 posesiones. Para esta categoría la combinación de eficiencia por encima del promedio, con el primer lugar de toda la liga en volumen le da a Embiid la ventaja.
 
 
   <h3> <p style="font-family: Arial"> Creación: </h3>
@@ -58,7 +58,7 @@ Se puede observar que Embiid y Giannis anotan con un gran volumen en comparació
   <iframe title="Comparación en métricas de creación" aria-label="Split Bars" id="datawrapper-chart-dU8g3" src="https://datawrapper.dwcdn.net/dU8g3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="171" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
   </script>
 
-<p style="font-family: Arial">Gracias a este <b>gráfico de barras divididas</b> se puede comparar el desempeño de los candidatos en las métricas relacionadas con creación durante la temporada. Se observa que el volumen y porcentaje de asistencias de Jokić se encuentran muy por encima de los otros candidatos, así como su porcentaje de pérdidas; esta variable se busca mantener en valores bajos, pero en el caso de Jokić que cuenta con el segundo porcentaje de asistencias más alto de la liga (46.6) indica que estas pérdidas se pueden generar por el alto volumen de pases intentados y por el hecho de intentar pases de alto riesgo alta recompensa. Esto junto con el hecho de brindar tanto volumen de asistencias mientras tiene el menor porcentaje de uso de los candidatos por un buen margen indica la gran hábilidad de creación de Jokić.
+<p style="font-family: Arial">Gracias a este <b>gráfico de barras divididas</b> se puede comparar el desempeño de los candidatos en las métricas relacionadas con creación durante la temporada. Se observa que el volumen y porcentaje de asistencias de Jokić se encuentran muy por encima de los otros candidatos, así como su porcentaje de pérdidas; esta variable se busca mantener en valores bajos, pero en el caso de Jokić, que cuenta con el segundo porcentaje de asistencias más alto de la liga (46.6) indica que estas pérdidas se pueden generar por el alto volumen de pases intentados y por el hecho de intentar pases de "alto riesgo alta recompensa". Esto, junto con el hecho de brindar tanto volumen de asistencias mientras tiene el menor porcentaje de uso de los 3 candidatos por un buen margen señala la gran hábilidad de creación de Jokić para su equipo.
 <br />
 <br />
 
@@ -67,30 +67,30 @@ Se puede observar que Embiid y Giannis anotan con un gran volumen en comparació
   <p style="font-family: Arial">Otra forma de corroborar las conclusiones obtenidas con el gráfico de barras divididas es utilizar un <b>gráfico de enjambre</b> que muestra la distribución de puntajes de Box Plus/Minus ofensivo de todos los jugadores de la liga. Esta es una variable híbrida que busca cuantificar los aportes ofensivos de cada jugador durante la temporada, incluyendo métricas de anotación y creación.
     <br />
     <br />
-    <p style="font-family: Arial">Anteriormente observamos que Jokić no es necesariamente el anotador más fuerte de los 3 candidatos, pero cuenta con el mejor BPM ofensivo. Indicando que la combinación de su gran eficiencia anotadora con habilidades de creación élite lo convierten el el mejor jugador ofensivo de la liga. También se puede observar que Embiid y Giannis se encuentran entre los mejores puestos de la liga.
+    <p style="font-family: Arial">Anteriormente observamos que Jokić no es necesariamente el anotador más fuerte de los 3 candidatos, pero cuenta con el mejor BPM ofensivo. Indicando que la combinación de su gran eficiencia anotadora con habilidades de creación élite lo convierten el el mejor jugador ofensivo de la liga. También se puede observar que Embiid y Giannis se encuentran entre los mejores puestos de la liga en OBPM.
 
   <h3> <p style="font-family: Arial">Defensa: </h3>
 
-  <p style="font-family: Arial">Cuantificar el impacto defensivo de un jugador suele ser complejo ya que muchas veces una buena defensa hace que no pasen cosas, y el hecho de que una cción no ocurra es difícil de cuentificar. Sin embargo, se busca hacer una aproximación utilizando varias estadísticas disponibles que se correlacionan con el desempeño defensivo de los equipos.
+  <p style="font-family: Arial">Cuantificar el impacto defensivo de un jugador suele ser complejo, ya que muchas veces una buena defensa hace que "no pasen" cosas, y el hecho de que una acción no ocurra es difícil de cuantificar. Sin embargo, se busca hacer una aproximación utilizando varias estadísticas disponibles que se correlacionan con el desempeño defensivo de los equipos.
     <br />
     <br />
 
   <img src="https://raw.githubusercontent.com/Daniel-Merizalde/08MBID_trabajo_practico/main/blok_vs_reb.png" alt="Graph">
 
-  <p style="font-family: Arial">En el <b> gráfico de dispersión multivariable </b> se pueden evidenciar el rendimiento de los candidatos en porcentaje de bloqueos, en donde Embiid lidera claramente y porcentaje de rebotes defensivos, donde Jokić y Giannis se encuentran muy parejos. También se trata de visualizar la varible de Win Shares Defensivos (DWS) que estima el impacto defensivo de cada jugador según el desempeño del equipo cuando el jugador está en cancha, sin embargo, los valores parecen ser tan cercanos que no se pueden evidenciar diferencias en los 3 candidatos.
+  <p style="font-family: Arial">En este <b> gráfico de dispersión multivariable </b> se pueden evidenciar el rendimiento de los candidatos en porcentaje de bloqueos, en donde Embiid lidera claramente y porcentaje de rebotes defensivos, donde Jokić y Giannis se encuentran muy parejos. También se trata de visualizar la varible de Win Shares Defensivos (DWS) que estima el impacto defensivo de cada jugador según el desempeño del su cuando el está en cancha, sin embargo, los valores parecen ser tan cercanos que no se evidencian diferencias de tamaño en los 3 candidatos.
   <br />
   <br />
 
   <iframe title="Comparación en métricas defensivas" aria-label="Split Bars" id="datawrapper-chart-kOp7E" src="https://datawrapper.dwcdn.net/kOp7E/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="157" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
   </script>
 
-<p style="font-family: Arial">Para complementar el análisis defensivo, se genera un <b> gráfico de barras divididas </b>, en donde se evidencia que el rating defensivo de sus equipos cuando el jugador está en cancha, así como el porcentaje en tiros defendidos presentan a Giannis cómo el mejor defensor (Para estas variables un valor menor es mejor ya que se está estimando la eficiencia en puntos del oponente) y se corrobora que los valores de Win Shares Devensivos son prácticamente iguales. Teniendo en cuenta que la defensa es más difícil de cuantificar a nivel individual y Giannis hizo parte de la cuarta mejor defensa de la liga durante la temporada, se le da la ventaja sobre Embiid por un ligero márgen.
+<p style="font-family: Arial">Para complementar el análisis defensivo, se genera un <b> gráfico de barras divididas </b>, en donde se evidencia que el rating defensivo de sus equipos cuando el jugador está en cancha, así como el porcentaje en tiros defendidos presentan a Giannis cómo el mejor defensor (Para estas variables un valor menor es mejor ya que se está estimando la eficiencia ofensiva del oponente) y se corrobora que los valores de Win Shares Defensivos son prácticamente iguales. Teniendo en cuenta que la defensa es más difícil de cuantificar a nivel individual y Giannis fue una pieza clave de la cuarta mejor defensa de la liga durante la temporada, se le da la ventaja sobre Embiid por un ligero márgen a pesar del gran porcentaje de bloqueos de Embiid.
   <br />
   <br />
 
   <h3> <p style="font-family: Arial"> Espaciado: </h3>
 
-    <p style="font-family: Arial">El espaciado habla de la hábilidad de un jugador para generar espacios de ataque para sus compañeros gracias a su hábilidad de anotar en tiros a distancia, ya que si un jugador es buen anotador al estar lejos de la canasta los defensas no pueden dejarlo libre cuando no tiene posesión del balón.
+    <p style="font-family: Arial">El espaciado habla de la habilidad de un jugador para generar espacios de ataque para sus compañeros gracias a su capacidad de anotar en tiros a distancia, ya que si un jugador es buen anotador cuando está lejos de la canasta, los defensas no pueden dejarlo libre cuando no tiene posesión del balón.
       <br />
       <br />
 
@@ -105,13 +105,13 @@ Se puede observar que Embiid y Giannis anotan con un gran volumen en comparació
   <iframe title="Comparación en métricas de creación" aria-label="Split Bars" id="datawrapper-chart-x6xnA" src="https://datawrapper.dwcdn.net/x6xnA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="157" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
   </script>
 
-<p style="font-family: Arial">La versatilidad de tiro de Embiid se corrobora usando un <b> gráfico de barras divididas </b> qeu compara el npumero de intentos por cada 100 posesiones desde 2 y 3 puntos, así como los porcentajes anotados en cada una de las zonas. Este gráfico indica que probablemente Jokić sea el mejor tirados de los 3; evidenciado por su excelente porcentaje de tiro desde ambas zonas (especialmente la de 2 puntos). Sin embargo, gracias a su vérsatilidad de ubicaciones y volumen sin perder mucha eficiencia, Embiid se queda con la primera posición en términos de espaciado.
+<p style="font-family: Arial">La versatilidad de tiro de Embiid se corrobora usando un <b> gráfico de barras divididas </b> que compara el número de intentos por cada 100 posesiones desde 2 y 3 puntos, así como los porcentajes anotados en cada una de las zonas. Este gráfico indica que probablemente Jokić es el mejor tirador de los 3; evidenciado por su excelente porcentaje de tiro desde ambas zonas (especialmente la de 2 puntos). Sin embargo, gracias a su vérsatilidad de ubicaciones y mayor volumen sin sacrificar muchos puntos de eficiencia, Embiid se queda con la primera posición en términos de espaciado.
   <br />
   <br />
 
   <h3> <p style="font-family: Arial"> Rendimiento colectivo: </h3>
 
-    <p style="font-family: Arial">Se compara el rendimiento colectivo de los candidatos usando un <b> gráfico de barras divididas </b> que ilustra los porcentajes de victorias durante la temporada. Para este caso Giannis es el jugador con mejor rendimiento (su equipo tuvo el mejor record de toda la liga), pero todos los candidatos jugaron en equipos que tuvieron un gran éxito en términos de victorias durante la temporada regular.
+    <p style="font-family: Arial">Se compara el rendimiento colectivo de los candidatos usando un <b> gráfico de barras apiladas </b> que ilustra los porcentajes de victorias durante la temporada. Para este caso Giannis es el jugador con mejor rendimiento (su equipo tuvo el mejor record de toda la liga), pero todos los candidatos jugaron en equipos que tuvieron un gran éxito en términos de victorias durante la temporada regular.
       <br />
       <br />
 
@@ -122,7 +122,30 @@ Se puede observar que Embiid y Giannis anotan con un gran volumen en comparació
 
   <img src="https://raw.githubusercontent.com/Daniel-Merizalde/08MBID_trabajo_practico/main/radar.png" alt="Graph">
 
-  <p style="font-family: Arial">Teniendo en cuenta los resultados de cada categoría evaluada, se hace un <b> gráfico de radar </b> que evidencia las fortalezas y débilidades de cada candidato sobre los otros, así como lo pareja que fue la carrera por el MVP de la temporada 2022-23. Cada persona puede tener opiniones que difieren y dar más peso a una de las categorías sobre las otras, pero tomendo el valor de cada categoría por igual, el jugador más valioso de la NBA para la temporada es <b> JOEL EMBIID </b>.
+  <p style="font-family: Arial">Teniendo en cuenta los resultados de cada categoría evaluada, se hace un <b> gráfico de radar </b> que evidencia las fortalezas y débilidades de cada candidato sobre los otros, así como lo pareja que fue la carrera por el MVP de la temporada 2022-23. Cada persona puede tener opiniones que difieren y dar más peso a una de las categorías sobre las otras, pero tomando el valor de cada categoría por igual, el jugador más valioso de la NBA para la temporada es <b> JOEL EMBIID. </b>
     <br />
     <br />
+
+    <h2> <p style="font-family: Arial"> Aprendizajes y comentarios: </h2>
+    
+      <p style="font-family: Arial">Antes de comenzar la actividad, mi candidato elegido era Nikola Jokić, por lo que es interesante ir analizando los resultados y ver como los datos recolectados pueden no estar de acuerdo con mis creencias previas (Let de DataSet change your mindset).
+        <br />
+      <p style="font-family: Arial">Al utilizar una variedad de herramientas diferentes, puede ser complejo mantener una cohesión en cuanto a los tipos de gráficos y su estilo, por esto se usa una paleta de colores verde, azul y amarillo para poder mantener una identidad gráfica durante todo el documento.
+        <br />
+      <p style="font-family: Arial">A pesar de que el público objetivo del trabajo probablemente ya tiene conocimiento sobre los temas que trata cada variable, al ser específicas de un deporte se cambió el tipo de redacción para poder explicarlas y que idealmente cualquier persona pudiera entender los gráficos y los resultados obtenidos.
+        <br />
+        <br />
+        Muchas gracias.
+
+    <h2> <p style="font-family: Arial"> Herramientas empleadas: </h2>
+      <span class="negrita"><p style="font-family: Arial">Seaborn:</span> Dispersión - Enjambre.
+      <span class="negrita"><p style="font-family: Arial">Matplotlib:</span> Mapa - Radar.
+      <span class="negrita"><p style="font-family: Arial">Data Wrapper:</span> Barras divididas - Barras apiladas.
+      <br />
+
+    <h2> <p style="font-family: Arial"> Fuentes consultadas: </h2>
+      <span class="negrita"><p style="font-family: Arial">Basketball Reference:</span> https://www.basketball-reference.com/leagues/NBA_2023_shooting.html
+      <span class="negrita"><p style="font-family: Arial">Sitio oficial NBA:</span> https://www.nba.com/stats/teams/traditional
+      <span class="negrita"><p style="font-family: Arial">Medium:</span> https://towardsdatascience.com/make-a-simple-nba-shot-chart-with-python-e5d70db45d0d
+      <br />
   
