@@ -1,45 +1,59 @@
 <div id="app"></div>
 
-<h1> Usando datos para elegir al jugador más valioso de la NBA en 2023 </h1>
-<h2> 08MBID - Máster en Big Data VIU </h2>
+<h1> <p style="font-family: Arial">Usando datos para elegir al jugador más valioso de la NBA en 2023 </h1>
+<h2> <p style="font-family: Arial">08MBID - Máster en Big Data VIU </h2>
 
-<span class="negrita">Autor:</span> Daniel Merizalde restrepo
+<span class="negrita"><p style="font-family: Arial">Autor:</span> Daniel Merizalde restrepo
   <br />
 
-  <span class="negrita">Fecha:</span>
+  <span class="negrita"><p style="font-family: Arial">Fecha:</span>
       30-04-2023
   <br />
 
-  <span class="negrita">Enlace Stackblitz:</span> 
+  <span class="negrita"><p style="font-family: Arial">Enlace Stackblitz:</span> 
   <a href="https://js-8a9hcw.stackblitz.io" target="_blank">
     https://js-8a9hcw.stackblitz.io
   </a>
   <br />
 
-  <h2> Introducción: </h2>
+  <h2> <p style="font-family: Arial">Introducción: </h2>
 
-Durante cada temporada de la NBA, un panel de expertos realiza votaciones para seleccionar al jugador más valioso de la temporada (MVP pos sus siglas en inglés). En la mayoría de los casos hay un candidato que se diferencia claramente de los otros jugadores, pero para la temporada 2022-2023 se presenta una carrera entre 3 candidatos finalistas que tienen un caso fuerte para ser elegidos cómo MVP: Nikola Jokic (Serbia), Giannis Antetoukoumpo (Grecia) y Joel Embiid (Camerún).
+    <p style="font-family: Arial">Durante cada temporada de la NBA, un panel de expertos realiza votaciones para seleccionar al jugador más valioso de la temporada (MVP pos sus siglas en inglés). En la mayoría de los casos hay un candidato que se diferencia claramente de los otros jugadores, pero para la temporada 2022-2023 se presenta una carrera entre 3 candidatos finalistas que tienen un caso fuerte para ser elegidos cómo MVP: Nikola Jokić (Serbia), Giannis Antetoukoumpo (Grecia) y Joel Embiid (Camerún).
 <br />
 <br />
 Para esta actividad se comparan las estadisticas de estos 3 jugadores durante la temporada 2022-2023, para definir quién merece el premio a jugador más valioso utilizando datasets generados durante la actividad número 2 de minería de datos (05MBID).
 
-  <h2> Audiencia: </h2>
+  <h2><p style="font-family: Arial"> Audiencia: </h2>
 
-El trabajo se plantea con un formato de artículo deportivo símilar a este 
+    <p style="font-family: Arial">El trabajo se plantea con un formato de artículo deportivo símilar a este 
 <a href="https://fivethirtyeight.com/features/the-best-way-to-derail-an-nba-offense-make-it-waste-time/" target="_blank">
   artículo de muestra
 </a> 
 del sito web FiveThirtyEight. Por lo tanto, la audiencia a quién está dirigido es a personas interesadas en la NBA y cómo la analítica de datos puede generar nuevas perspectivas sobre la misma.
 
-  <h2> Objetivo: </h2>
+  <h2> <p style="font-family: Arial">Objetivo: </h2>
 
-  Generar visualizaciones de datos ilustrando el rendimiento de los 3 candidatos al MVP en 5 categorías: Anotación, creación, defensa, espaciado y rendimiento colectivo. Para posteriormente hacer un análisis y elegir al MVP de la NBA durante la temporada 2022-2023.
+    <p style="font-family: Arial">Generar visualizaciones de datos ilustrando el rendimiento de los 3 candidatos al MVP en 5 categorías: Anotación, creación, defensa, espaciado y rendimiento colectivo. Para posteriormente hacer un análisis y elegir al MVP de la NBA durante la temporada 2022-2023.
 
-  <h3> Anotación: </h3>
+  <h3> <p style="font-family: Arial">Anotación: </h3>
 
+  <p style="font-family: Arial">En cuanto a anotación de puntos, los dos aspectos de mayor importancia para generar valor a un equipo son el volumen (cuantos puntos se anotaron) y la eficiencia (porcentaje de tiros intentados vs. tiros convertidos). Por esto se plantea una gráfica que compara los puntos anotados por cada 100 posesiones (eje x) con el porcentaje de tiro real (eje y) de todos los jugadores que participaron en más de 5 partidos durante la temporada; para este gráfico los jugadores con mejor rendimiento ocupan el cuadrante superior derecho. La última variable presente es el porcentaje de uso (USG%) que indica la cantidad de posesiones del equipo que involucran directamente al jugador.
+
+<br />
   <img src="https://raw.githubusercontent.com/Daniel-Merizalde/08MBID_trabajo_practico/main/eficiencia_vs_vol.png" alt="Graph">
 
+  <p style="font-family: Arial">Gracias a este <b> gráfico de dispersión multivariable </b> se puede hacer una comparación de los candidatos en los tres aspectos mencionados anteriormente, no solo entre ellos sino con el resto de jugadores de la liga, gracias al <b> énfasis de color </b> que los diferencia. 
+
+<br />
+<br />
+Se puede observar que Embiid y Giannis anotan con un gran volumen en comparación con el resto de la liga, siendo número 1 y 2 respectivamente en puntos por 100 posesiones y usando un gran porcentaje de las posesiones de sus equipos, ilustrado por el tamaño de los puntos que los representa. El perfil anotador de Jokić es muy distinto, ya que su volumen y porcentaje de uso son menores, pero su eficiencia es la mejor entre jugadores con un alto volumen de anotación. Para esta categoría la combinación de eficiencia por encima del promedio, con el primer lugar de toda la liga en volumen le da a Embiid la ventaja.
+
+
   <h3> Creación: </h3>
+
+  <p style="font-family: Arial">Creación es la hábilidad de asistir y generar tiros para tus compañeros de equipo. Para poder comparar las hábilidades de creación de los tres candidatos se analizan sus asistencias por cada 100 posesiones y sus porcentajes de asistencia, pérdidas y uso. La mejor forma de generar valor para un equipo en términos de creación es tener un alto volumen y porcentaje de asistencias, mientras se mantiene el porcentaje de pérdidas en el menor número posible.
+<br />
+<br />
 
   <iframe title="Comparación en métricas de creación" aria-label="Split Bars" id="datawrapper-chart-dU8g3" src="https://datawrapper.dwcdn.net/dU8g3/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="171" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
   </script>
